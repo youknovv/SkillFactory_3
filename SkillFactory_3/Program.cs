@@ -13,8 +13,13 @@ class MainClass
         Console.WriteLine("My age is " + MyAge);
         Console.WriteLine("Do I have a pet? " + Pet);
         Console.WriteLine("My shoe size is " + ShoeSize);
+        Console.WriteLine();
+
+        double result = 10 % 3;
+        Console.WriteLine(result);
 
         Console.ReadKey();
 
     }
 }
+
