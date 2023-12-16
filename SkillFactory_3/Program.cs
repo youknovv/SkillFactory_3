@@ -4,29 +4,16 @@ class MainClass
 {
     public static void Main(string[] args)
     {
-        const string MyName = "Daniil";
-        byte MyAge = 20;
-        bool Pet = true;
-        double ShoeSize = 44.5;
-
-        Console.WriteLine("My name is " + MyName);
-        Console.WriteLine("My age is " + MyAge);
-        Console.WriteLine("Do I have a pet? " + Pet);
-        Console.WriteLine("My shoe size is " + ShoeSize);
-        Console.WriteLine();
-
-        double result = 10 % 3;
-        Console.WriteLine(result);
-        Console.WriteLine();
-
-        Console.Write("What is your favorite day of week? ");
-        DayOfWeek day = (DayOfWeek) int.Parse(Console.ReadLine());
-        Console.WriteLine($"Your favorite day is {day}");
-
-
+        Console.Write("Enter your name: ");
+        var name = Console.ReadLine();
+        Console.Write("Enter your age: ");
+        var age = Convert.ToInt32(Console.ReadLine());
+        Console.Write($"Your name is {name} and age is {age} \n");
+        Console.Write("Enter your birthdate: ");
+        var birthdate= Console.ReadLine();
+        Console.Write($"Your birthdate is {birthdate}");
 
         Console.ReadKey();
-
     }
-}
 
+}
