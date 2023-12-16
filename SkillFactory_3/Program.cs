@@ -17,6 +17,13 @@ class MainClass
 
         double result = 10 % 3;
         Console.WriteLine(result);
+        Console.WriteLine();
+
+        Console.Write("What is your favorite day of week? ");
+        DayOfWeek day = (DayOfWeek) int.Parse(Console.ReadLine());
+        Console.WriteLine($"Your favorite day is {day}");
+
+
 
         Console.ReadKey();
 
