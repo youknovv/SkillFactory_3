@@ -115,5 +115,15 @@ class MainClass
                 number1++;
         }
         Console.WriteLine(number1);
+
+        (string Name, string Type, double Age, int NameCount) Pet;
+        Pet.Name = Console.ReadLine();
+        Pet.Type = Console.ReadLine();
+        Pet.Age = Convert.ToDouble(Console.ReadLine());
+        Pet.NameCount = Pet.Name.Length;
+        Console.WriteLine("Имя питомца: {0}", Pet.Name);
+        Console.WriteLine("Тип питомца: {0}", Pet.Type);
+        Console.WriteLine("Возраст питомца: {0}", Pet.Age);
+        Console.WriteLine("Длина имени питомца: {0}", Pet.NameCount);
     }
 }
