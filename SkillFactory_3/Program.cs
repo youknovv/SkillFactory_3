@@ -79,5 +79,17 @@ class MainClass
         {
             Console.Write(item);
         }
+        Console.WriteLine();
+
+        var arr2 = new int[] { 5, 6, 9, 1, 2, 3, 4 };
+        int sum = 0;
+
+        for (int i = 0; i < arr2.Length; i++)
+        {
+            sum += arr2[i];
+        }
+
+        Console.WriteLine(sum);
+
     }
 }
