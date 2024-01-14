@@ -11,33 +11,33 @@ class MainClass
             Console.WriteLine("Iteration {0}", i);
             switch (Console.ReadLine())
             {
-            case "red":
-                Console.BackgroundColor = ConsoleColor.Red;
-                Console.ForegroundColor = ConsoleColor.Black;
+                case "red":
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.Black;
 
-                Console.WriteLine("Your color is red!");
-                break;
+                    Console.WriteLine("Your color is red!");
+                    break;
 
-            case "green":
-                Console.BackgroundColor = ConsoleColor.Green;
-                Console.ForegroundColor = ConsoleColor.Black;
+                case "green":
+                    Console.BackgroundColor = ConsoleColor.Green;
+                    Console.ForegroundColor = ConsoleColor.Black;
 
-                Console.WriteLine("Your color is green!");
-                break;
+                    Console.WriteLine("Your color is green!");
+                    break;
 
-            case "cyan":
-                Console.BackgroundColor = ConsoleColor.Cyan;
-                Console.ForegroundColor = ConsoleColor.Black;
+                case "cyan":
+                    Console.BackgroundColor = ConsoleColor.Cyan;
+                    Console.ForegroundColor = ConsoleColor.Black;
 
-                Console.WriteLine("Your color is cyan!");
-                break;
+                    Console.WriteLine("Your color is cyan!");
+                    break;
 
-            default:
-                Console.BackgroundColor = ConsoleColor.Yellow;
-                Console.ForegroundColor = ConsoleColor.Black;
+                default:
+                    Console.BackgroundColor = ConsoleColor.Yellow;
+                    Console.ForegroundColor = ConsoleColor.Black;
 
-                Console.WriteLine("Your color is yellow!");
-                break;
+                    Console.WriteLine("Your color is yellow!");
+                    break;
             }
         }
 
@@ -91,5 +91,29 @@ class MainClass
 
         Console.WriteLine(sum);
 
+        int[][] array2 = new int[3][];
+
+        array2[0] = new int[2] { 1, 2 };
+        array2[1] = new int[3] { 1, 2, 3 };
+        array2[2] = new int[5] { 1, 2, 3, 4, 5 };
+
+        foreach (var num in array2)
+        {
+            foreach (var item in num)
+            {
+                Console.Write(item + " ");
+            }
+        }
+        Console.WriteLine();
+
+        int[] array3 = { -1, 2, 3, -5, 6, 7, 8, 9, -8, 11, 0, -13 };
+        var number1 = 0;
+
+        for (int i = 0; i < array3.Length; i++)
+        {
+            if (array3[i] > 0)
+                number1++;
+        }
+        Console.WriteLine(number1);
     }
 }
