@@ -125,5 +125,43 @@ class MainClass
         Console.WriteLine("Тип питомца: {0}", Pet.Type);
         Console.WriteLine("Возраст питомца: {0}", Pet.Age);
         Console.WriteLine("Длина имени питомца: {0}", Pet.NameCount);
+
+            (string Name, string LastName, string Login, int LoginLength, bool HasPet, double Age, string[] FavColor) User;
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("Введите имя пользователя: ");
+                User.Name = Console.ReadLine();
+
+                Console.WriteLine("Введите фамилию пользователя: ");
+                User.LastName = Console.ReadLine();
+
+                Console.WriteLine("Введите логин: ");
+                User.Login = Console.ReadLine();
+
+                User.LoginLength = User.Login.Length;
+                Console.WriteLine("Длина логина: {0}", User.LoginLength);
+
+                Console.WriteLine("Есть ли у вас животные? Да или нет");
+                var pet = Console.ReadLine();
+                if (pet == "Да")
+                {
+                    User.HasPet = true;
+                }
+                else
+                {
+                    User.HasPet = false;
+                }
+
+                Console.WriteLine("Введите возраст пользователя: ");
+                User.Age = double.Parse(Console.ReadLine());
+
+                User.FavColor = new string[3];
+                Console.WriteLine("Введите три любимых цвета пользователя");
+                for (int j = 0; j < User.FavColor.Length; j++)
+                {
+                    User.FavColor[j] = Console.ReadLine();
+                }
+            }
     }
 }
